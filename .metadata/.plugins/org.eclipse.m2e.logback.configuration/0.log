@@ -1,0 +1,135 @@
+2015-12-09 20:07:07,333 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: location:location:0.0.1-SNAPSHOT @ C:\java\location\location\pom.xml.
+2015-12-09 20:07:08,821 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:07:08,837 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-09 20:07:08,840 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:07:08,841 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-09 20:07:08,872 [Worker-21] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /location/src
+2015-12-09 20:07:08,873 [Worker-21] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /location/src/test/java because it overlaps with /location/src
+2015-12-09 20:07:09,366 [Worker-21] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-12-09 20:07:09,807 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: location:location:0.0.1-SNAPSHOT @ C:\java\location\location\pom.xml.
+2015-12-09 20:07:10,812 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:07:10,813 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-09 20:07:10,816 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:07:10,817 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-09 20:07:10,817 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of location
+2015-12-09 20:07:10,818 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for location
+2015-12-09 20:07:10,824 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2015-12-09 20:07:10,833 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:07:10,856 [Worker-21] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /location/src
+2015-12-09 20:07:10,856 [Worker-21] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /location/src/test/java because it overlaps with /location/src
+2015-12-09 20:07:11,114 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for location
+2015-12-09 20:07:11,137 [Worker-21] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2015-12-09 20:07:11,929 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:07:11,932 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-09 20:07:11,934 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:07:11,935 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-09 20:07:11,935 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of location
+2015-12-09 20:07:11,935 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for location
+2015-12-09 20:07:11,942 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:08:51,458 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: location:location:0.0.1-SNAPSHOT @ C:\java\location\location\pom.xml.
+2015-12-09 20:08:52,120 [Worker-28] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b09/javax.inject-2.4.0-b09.jar
+2015-12-09 20:08:52,189 [Worker-28] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b09/javax.inject-2.4.0-b09.jar
+2015-12-09 20:08:53,231 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:08:53,235 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-09 20:08:53,238 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:08:53,242 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-09 20:08:53,243 [Worker-28] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of location
+2015-12-09 20:08:53,243 [Worker-28] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for location
+2015-12-09 20:08:53,255 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:18,884 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: location:location:0.0.1-SNAPSHOT @ C:\java\location\location\pom.xml.
+2015-12-09 20:11:20,093 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:20,094 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-09 20:11:20,096 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:20,097 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-09 20:11:20,097 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of location
+2015-12-09 20:11:20,098 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for location
+2015-12-09 20:11:20,102 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:34,083 [Worker-26] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-12-09 20:11:34,575 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: location:location:0.0.1-SNAPSHOT @ C:\java\location\location\pom.xml.
+2015-12-09 20:11:35,510 [Worker-26] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /location/src
+2015-12-09 20:11:35,511 [Worker-26] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /location/src/test/java because it overlaps with /location/src
+2015-12-09 20:11:36,206 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for location
+2015-12-09 20:11:36,210 [Worker-26] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2015-12-09 20:11:36,550 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:36,551 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-09 20:11:36,553 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:36,554 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-09 20:11:36,555 [Worker-30] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of location
+2015-12-09 20:11:36,555 [Worker-30] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for location
+2015-12-09 20:11:36,559 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:44,217 [Worker-31] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: location:location:0.0.1-SNAPSHOT @ C:\java\location\location\pom.xml.
+2015-12-09 20:11:44,529 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.22.1/jersey-server-2.22.1.pom
+2015-12-09 20:11:44,653 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.22.1/jersey-server-2.22.1.pom
+2015-12-09 20:11:44,758 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/project/2.22.1/project-2.22.1.pom
+2015-12-09 20:11:45,058 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/project/2.22.1/project-2.22.1.pom
+2015-12-09 20:11:45,199 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.22.1/jersey-common-2.22.1.pom
+2015-12-09 20:11:45,266 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.22.1/jersey-common-2.22.1.pom
+2015-12-09 20:11:45,332 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.1/jersey-guava-2.22.1.pom
+2015-12-09 20:11:45,397 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.1/jersey-guava-2.22.1.pom
+2015-12-09 20:11:45,453 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/project/2.22.1/project-2.22.1.pom
+2015-12-09 20:11:45,517 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/project/2.22.1/project-2.22.1.pom
+2015-12-09 20:11:45,574 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/project/2.22.1/project-2.22.1.pom
+2015-12-09 20:11:45,637 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/project/2.22.1/project-2.22.1.pom
+2015-12-09 20:11:46,306 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.22.1/jersey-client-2.22.1.pom
+2015-12-09 20:11:46,365 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.22.1/jersey-client-2.22.1.pom
+2015-12-09 20:11:46,431 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.22.1/jersey-media-jaxb-2.22.1.pom
+2015-12-09 20:11:46,487 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.22.1/jersey-media-jaxb-2.22.1.pom
+2015-12-09 20:11:46,545 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/media/project/2.22.1/project-2.22.1.pom
+2015-12-09 20:11:46,607 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/media/project/2.22.1/project-2.22.1.pom
+2015-12-09 20:11:46,682 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.22.1/jersey-server-2.22.1.jar
+2015-12-09 20:11:47,584 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.22.1/jersey-server-2.22.1.jar
+2015-12-09 20:11:47,663 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.22.1/jersey-common-2.22.1.jar
+2015-12-09 20:11:48,238 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.22.1/jersey-common-2.22.1.jar
+2015-12-09 20:11:48,293 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.1/jersey-guava-2.22.1.jar
+2015-12-09 20:11:48,899 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.1/jersey-guava-2.22.1.jar
+2015-12-09 20:11:48,952 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.22.1/jersey-client-2.22.1.jar
+2015-12-09 20:11:49,111 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.22.1/jersey-client-2.22.1.jar
+2015-12-09 20:11:49,161 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.22.1/jersey-media-jaxb-2.22.1.jar
+2015-12-09 20:11:49,275 [Worker-31] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.22.1/jersey-media-jaxb-2.22.1.jar
+2015-12-09 20:11:50,800 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:50,801 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-09 20:11:50,803 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 20:11:50,804 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-09 20:11:50,804 [Worker-31] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of location
+2015-12-09 20:11:50,804 [Worker-31] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for location
+2015-12-09 20:11:50,809 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:11:37,370 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:11:37,379 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:11:37,381 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:11:37,382 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:14:30,626 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:14:30,635 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:14:30,641 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:14:30,642 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:14:48,768 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:14:48,773 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:14:48,774 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:14:48,775 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:22:30,323 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:22:30,324 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:22:30,325 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:22:30,326 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:22:47,016 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:22:47,017 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:22:47,018 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:22:47,019 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:23:07,123 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:23:07,124 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:23:07,125 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:23:07,126 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:23:21,275 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:23:21,276 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:23:21,277 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:23:21,278 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:26:58,777 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:26:58,778 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:26:58,788 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:26:58,789 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:30:50,248 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:30:50,249 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:30:50,250 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:30:50,251 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
+2015-12-11 19:56:18,872 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:56:18,873 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\main\resources
+2015-12-11 19:56:18,874 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-11 19:56:18,874 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\java\location\location\src\test\resources
