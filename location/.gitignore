@@ -1,0 +1,10 @@
+.recommenders/
+.metadata
+*.class
+RemoteSystemsTempFiles
+.DS_Store
+Servers
+location/target/
+*.md5
+*.sha1
+~$*
