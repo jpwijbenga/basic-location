@@ -38,6 +38,6 @@ public class MyResource {
     @Path("/this")
     @Produces(MediaType.APPLICATION_JSON)
     public String getThis() {
-        return new Gson().toJson(new Location(new DateTime().getMillis(),15.12,14.2));
+        return new Gson().toJson(new Location(100,15.12,14.2));
     }
 }

@@ -42,7 +42,13 @@ public class MyResourceTest {
      */
     @Test
     public void testGetIt() {
-        String responseMsg = target.path("myresource").request().get(String.class);
+        String responseMsg = target.path("myresource/getit").request().get(String.class);
         assertEquals("Got it!", responseMsg);
+    }
+    
+    @Test
+    public void testGetThis() {
+    	String responseMsg = target.path("myresource/this").request().get(String.class);
+    	assertEquals("{\"dateTime\":{\"iMillis\":100,\"iChronology\":{\"iBase\":{\"iMinDaysInFirstWeek\":4}}},\"xLocation\":15.12,\"yLocation\":14.2}", responseMsg);
     }
 }
