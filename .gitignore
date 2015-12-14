@@ -8,3 +8,4 @@ location/target/
 *.md5
 *.sha1
 ~$*
+classes
