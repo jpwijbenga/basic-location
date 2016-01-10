@@ -9,3 +9,4 @@ location/target/
 *.sha1
 ~$*
 classes
+test.db

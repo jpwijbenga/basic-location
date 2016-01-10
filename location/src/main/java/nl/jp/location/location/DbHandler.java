@@ -8,33 +8,49 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DbHandler {
-	public static void insert(Location location) throws Exception {
-        Class.forName("org.sqlite.JDBC");
-        Connection conn = DriverManager.getConnection("jdbc:sqlite:test.db");
-        Statement stat = conn.createStatement();
+	private Connection connection;
+
+	public DbHandler() {
+		try {
+			Class.forName("org.sqlite.JDBC");
+		}
+		catch(ClassNotFoundException e) {
+			System.out.println("Can't find JDBC Driver, not inserting." + e);
+			return;
+		}
+	}
+	
+	public Connection getConnection() throws SQLException {
+		if (connection == null || connection.isClosed()) {
+			connection = DriverManager.getConnection("jdbc:sqlite:test.db");
+		}
+		return connection;
+	}
+	
+	public void insert(Location location) throws SQLException {
+        Statement stat = getConnection().createStatement();
         stat.executeUpdate("drop table if exists location;");
         stat.executeUpdate("create table location (x, y, millis);");
-        PreparedStatement prep = conn.prepareStatement("insert into location values (?, ?, ?);");
+        PreparedStatement prep = getConnection().prepareStatement("insert into location values (?, ?, ?);");
 
         prep.setDouble(1, location.xLocation);
         prep.setDouble(2, location.yLocation);
         prep.setLong(3,  location.getMillis());
         prep.addBatch();
 
-        conn.setAutoCommit(false);
+        getConnection().setAutoCommit(false);
         prep.executeBatch();
-        conn.setAutoCommit(true);
-
-        showResults(stat);
-        conn.close();
+        getConnection().setAutoCommit(true);
     }
 
-	private static void showResults(Statement stat) throws SQLException {
-		ResultSet rs = stat.executeQuery("select * from people;");
-        while (rs.next()) {
-            System.out.println("name = " + rs.getString("name"));
-            System.out.println("job = " + rs.getString("occupation"));
-        }
+	public int countTotalIn(String tableName) throws SQLException {
+		Statement stat = getConnection().createStatement();
+		ResultSet rs = stat.executeQuery(String.format("select * from %s;",tableName));
+		int count = 0;
+		while (rs.next()) {
+			count++;
+		}
         rs.close();
+        return count;
 	}
 }
