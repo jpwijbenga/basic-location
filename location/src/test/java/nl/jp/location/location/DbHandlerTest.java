@@ -16,7 +16,7 @@ public class DbHandlerTest {
     @Test
     public void testInsert() throws SQLException {
     	dbHandler.prepareLocationTable();
-    	dbHandler.insert(new Location(100,32.12,32.14000));
+    	dbHandler.insert(new Location(123452300,32.12,32.14000));
     }
     
     @Test
