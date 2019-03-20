@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 public class SqlResponse {
 	public final ResponseStatus responseStatus;
 	public final String responseText;
+	private Gson gson = new Gson();
 	
 	public SqlResponse(ResponseStatus status, String text) {
 		responseStatus = status;
@@ -13,6 +14,6 @@ public class SqlResponse {
 
 	@Override
 	public String toString() {
-		return new Gson().toJson(this);
+		return gson.toJson(this);
 	}
 }

@@ -2,11 +2,11 @@ package nl.jp.location.location;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
 public class DbHandler {
 	private Connection connection;
 
@@ -24,28 +24,32 @@ public class DbHandler {
 		if (connection == null || connection.isClosed()) {
 			connection = DriverManager.getConnection("jdbc:sqlite:test.db");
 		}
+		if (connection.isValid(10)) {
+			log.info("Connection is valid");
+		}
 		return connection;
 	}
 	
 	public void insert(Location location) throws SQLException {
-        Statement stat = getConnection().createStatement();
-        stat.executeUpdate("drop table if exists location;");
-        stat.executeUpdate("create table location (x, y, millis);");
-        PreparedStatement prep = getConnection().prepareStatement("insert into location values (?, ?, ?);");
-
+        var prep = getConnection().prepareStatement("insert into location values (?, ?, ?);");
         prep.setDouble(1, location.xLocation);
         prep.setDouble(2, location.yLocation);
         prep.setLong(3,  location.getMillis());
         prep.addBatch();
-
         getConnection().setAutoCommit(false);
         prep.executeBatch();
         getConnection().setAutoCommit(true);
     }
 
+	public void prepareLocationTable() throws SQLException {
+		var stat = getConnection().createStatement();
+        stat.executeUpdate("drop table if exists location;");
+        stat.executeUpdate("create table location (x, y, millis);");
+	}
+
 	public int countTotalIn(String tableName) throws SQLException {
-		Statement stat = getConnection().createStatement();
-		ResultSet rs = stat.executeQuery(String.format("select * from %s;",tableName));
+		var stat = getConnection().createStatement();
+		var rs = stat.executeQuery(String.format("select * from %s;",tableName));
 		int count = 0;
 		while (rs.next()) {
 			count++;

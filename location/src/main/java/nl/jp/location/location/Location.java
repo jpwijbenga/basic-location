@@ -1,28 +1,28 @@
 package nl.jp.location.location;
 
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
-import org.joda.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
-public class Location  {
-	
-	private static final LocalDateTime JAN_1_1970 = new LocalDateTime(1970, 1, 1, 0, 0);
-	
-	private final DateTime dateTime;
-	public final double xLocation;
-	public final double yLocation;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+public class Location {
+	@Getter
+	public ZonedDateTime dateTime;
+	public double xLocation;
+	public double yLocation;
 
 	public Location(long dateTimeMillisUtc, double x, double y) {
-		dateTime = JAN_1_1970.toDateTime(DateTimeZone.UTC).plus(dateTimeMillisUtc);
+		dateTime = ZonedDateTime.now(ZoneId.of("Z"));
 		xLocation = x;
 		yLocation = y;
 	}
-	
-	public DateTime getDateTime() {
-		return dateTime;
-	}
 
 	public long getMillis() {
-		return dateTime.getMillis();
+		if (dateTime == null) {
+			return 0;
+		}
+		return dateTime.toInstant().toEpochMilli();
 	}
 }
