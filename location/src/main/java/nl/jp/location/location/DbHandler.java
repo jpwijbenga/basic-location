@@ -15,7 +15,7 @@ public class DbHandler {
 			Class.forName("org.sqlite.JDBC");
 		}
 		catch(ClassNotFoundException e) {
-			System.out.println("Can't find JDBC Driver, not inserting." + e);
+			log.error("Can't find JDBC Driver, not inserting." + e);
 			return;
 		}
 	}

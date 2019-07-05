@@ -17,7 +17,7 @@ import lombok.extern.log4j.Log4j2;
 /**
  * Root resource (exposed at "myresource" path)
  */
-@Path("myresource")
+@Path("")
 @Log4j2
 public class MyResource {
 	Gson gson = new Gson();
@@ -96,18 +96,18 @@ public class MyResource {
 
 	@GET
 	@Path("/count")
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.TEXT_PLAIN)
 	public Response count() {
 		int i = 0;
 		try {
 			i = dbHandler.countTotalIn("location");
 		} catch (SQLException e) {
 			log.error("Error with state " + e.getSQLState() + " and error code " + e.getErrorCode() + " and message: "
-					+ e.getMessage());
+			+ e.getMessage());
 			return Response.status(500).entity(e.getSQLState()).build();
 		} catch (Exception e) {
 			log.error("Other error: ", e);
 		}
-		return Response.ok("Number of entries: " + i).build();
+		return Response.ok("Count: " + i).build();
 	}
 }

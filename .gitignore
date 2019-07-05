@@ -10,3 +10,8 @@ location/target/
 ~$*
 classes
 test.db
+.classpath
+.factorypath
+.settings
+.vscode
+

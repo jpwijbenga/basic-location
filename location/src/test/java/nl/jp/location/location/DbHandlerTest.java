@@ -2,13 +2,16 @@ package nl.jp.location.location;
 
 import java.sql.SQLException;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
 public class DbHandlerTest {
 	private DbHandler dbHandler;
 	
-	@Before
+	@BeforeAll
 	public void setUp() throws SQLException {
 		dbHandler = new DbHandler();
 	}
@@ -21,6 +24,6 @@ public class DbHandlerTest {
     
     @Test
     public void testTotalSize() throws SQLException {
-    	System.out.println("Total count location: " + dbHandler.countTotalIn("location"));
+    	log.info("Total count location: " + dbHandler.countTotalIn("location"));
     }
 }

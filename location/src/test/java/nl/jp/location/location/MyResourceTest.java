@@ -1,10 +1,7 @@
 package nl.jp.location.location;
 
-import static org.junit.Assert.assertEquals;
-
 import java.sql.SQLException;
 
-import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
@@ -12,18 +9,17 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.glassfish.grizzly.http.server.HttpServer;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 
 public class MyResourceTest {
-
     private HttpServer server;
     private WebTarget target;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         // start the server
         server = Main.startServer();
@@ -39,9 +35,11 @@ public class MyResourceTest {
         target = c.target(Main.BASE_URI);
     }
 
-    @After
+    @AfterAll
     public void tearDown() throws Exception {
-        server.shutdownNow();
+        if (server != null) {
+            server.shutdownNow();
+        }
     }
 
     /**
@@ -50,7 +48,7 @@ public class MyResourceTest {
     @Test
     public void testGetIt() {
         var responseMsg = target.path("myresource/getit").request().get(String.class);
-        assertEquals("Got it!", responseMsg);
+        Assertions.assertEquals("Got it!", responseMsg);
     }
     
     @Test
@@ -76,6 +74,6 @@ public class MyResourceTest {
 
     	int after = dbHandler.countTotalIn("location");
         System.out.println("L " + after + " - " + before);
-        Assert.assertEquals(2, after - before);
+        Assertions.assertEquals(2, after - before);
     }
 }
