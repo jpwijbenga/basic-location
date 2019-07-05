@@ -5,7 +5,7 @@ import com.google.gson.Gson;
 public class SqlResponse {
 	public final ResponseStatus responseStatus;
 	public final String responseText;
-	private Gson gson = new Gson();
+	private static Gson gson = new Gson();
 	
 	public SqlResponse(ResponseStatus status, String text) {
 		responseStatus = status;

@@ -15,7 +15,7 @@ import com.google.gson.Gson;
 import lombok.extern.log4j.Log4j2;
 
 /**
- * Root resource (exposed at "myresource" path)
+ * Root resource (exposed at "" path)
  */
 @Path("")
 @Log4j2
@@ -48,16 +48,8 @@ public class MyResource {
 		return Response.ok(new Location(100l, 15.12d, 14.2d)).build();
 	}
 
-	/**
-	 * Method handling HTTP GET requests. The returned object will be sent to the
-	 * client as "text/plain" media type.
-	 *
-	 * @return Response.
-	 */
 	@POST
 	@Path("/store")
-	@Produces(MediaType.APPLICATION_JSON)
-	@Consumes(MediaType.APPLICATION_JSON)
 	public Response store(Location location) {
 		try {
 			dbHandler.insert(location);
@@ -72,7 +64,7 @@ public class MyResource {
 		return Response.ok(new Location(100l, 15.12d, 14.2d)).build();
 	}
 
-		/**
+	/**
 	 * Method handling HTTP GET requests. The returned object will be sent to the
 	 * client as "text/plain" media type.
 	 *
@@ -90,6 +82,7 @@ public class MyResource {
 			return Response.status(500).entity(e.getSQLState()).build();
 		} catch (Exception e) {
 			log.error("Other error: ", e);
+			return Response.status(500).entity(e.getMessage()).build();
 		}
 		return Response.ok(new Location(100l, 15.12d, 14.2d)).build();
 	}
@@ -103,7 +96,7 @@ public class MyResource {
 			i = dbHandler.countTotalIn("location");
 		} catch (SQLException e) {
 			log.error("Error with state " + e.getSQLState() + " and error code " + e.getErrorCode() + " and message: "
-			+ e.getMessage());
+					+ e.getMessage());
 			return Response.status(500).entity(e.getSQLState()).build();
 		} catch (Exception e) {
 			log.error("Other error: ", e);
