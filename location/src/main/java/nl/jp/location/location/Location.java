@@ -1,5 +1,6 @@
 package nl.jp.location.location;
 
+import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
@@ -14,14 +15,14 @@ public class Location {
 	public double yLocation;
 
 	public Location(long dateTimeMillisUtc, double x, double y) {
-		dateTime = ZonedDateTime.now(ZoneId.of("Z"));
+		dateTime = ZonedDateTime.ofInstant(Instant.ofEpochMilli(dateTimeMillisUtc), ZoneId.of("Z"));
 		xLocation = x;
 		yLocation = y;
 	}
 
-	public long getMillis() {
+	public Long getMillis() {
 		if (dateTime == null) {
-			return 0;
+			return null;
 		}
 		return dateTime.toInstant().toEpochMilli();
 	}
