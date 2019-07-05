@@ -11,16 +11,16 @@ import javax.ws.rs.core.Response;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 
 public class MyResourceTest {
-    private HttpServer server;
-    private WebTarget target;
+    private static HttpServer server;
+    private static WebTarget target;
 
-    @BeforeEach
-    public void setUp() throws Exception {
+    @BeforeAll
+    public static void setUp() throws Exception {
         // start the server
         server = Main.startServer();
         // create the client
@@ -36,7 +36,7 @@ public class MyResourceTest {
     }
 
     @AfterAll
-    public void tearDown() throws Exception {
+    public static void tearDown() throws Exception {
         if (server != null) {
             server.shutdownNow();
         }
@@ -47,13 +47,13 @@ public class MyResourceTest {
      */
     @Test
     public void testGetIt() {
-        var responseMsg = target.path("myresource/getit").request().get(String.class);
+        var responseMsg = target.path("/getit").request().get(String.class);
         Assertions.assertEquals("Got it!", responseMsg);
     }
     
     @Test
     public void testGetThis() {
-    	target.path("myresource/this").request().get(String.class);
+    	target.path("/this").request().get(String.class);
     }
     
     @Test
@@ -61,13 +61,13 @@ public class MyResourceTest {
     	var dbHandler = new DbHandler();
 		int before = dbHandler.countTotalIn("location");
     	var input = "{\"dateTime\":{\"iMillis\":100,\"iChronology\":{\"iBase\":{\"iMinDaysInFirstWeek\":4}}},\"xLocation\":15.12,\"yLocation\":14.2}";
-    	var responseMsg = target.path("myresource/store").
+    	var responseMsg = target.path("/store").
     			request().
     			post(Entity.entity(input, MediaType.APPLICATION_JSON),Response.class);
     	System.out.println(responseMsg.toString());
 
     	var location = new Location(101,41.233,40.233);
-    	var responseMsg2 = target.path("myresource/store").
+    	var responseMsg2 = target.path("/store").
     			request().
     			post(Entity.entity(location, MediaType.APPLICATION_JSON),Response.class);
     	System.out.println(responseMsg2.toString());

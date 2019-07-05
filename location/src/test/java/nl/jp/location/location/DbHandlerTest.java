@@ -9,10 +9,10 @@ import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 public class DbHandlerTest {
-	private DbHandler dbHandler;
+	private static DbHandler dbHandler;
 	
 	@BeforeAll
-	public void setUp() throws SQLException {
+	public static void setUp() throws SQLException {
 		dbHandler = new DbHandler();
 	}
 	
